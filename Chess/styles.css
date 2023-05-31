@@ -1,0 +1,158 @@
+html {
+    margin: 0px;
+    background-color: #141414;
+}
+
+.row {
+    clear: both;
+    width: 2000px;
+}
+
+.space {
+    float: left;
+    border: 1px solid #000;
+    padding: 10px;
+    width: 75px;
+    height: 75px;
+}
+
+.black-pawn {
+    background-image: url('./black-pieces/black_pawn.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.black-rook {
+    background-image: url('./black-pieces/black_rook.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.black-knight {
+    background-image: url('./black-pieces/black_knight.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.black-bishop {
+    background-image: url('./black-pieces/black_bishop.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.black-queen {
+    background-image: url('./black-pieces/black_queen.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.black-king {
+    background-image: url('./black-pieces/black_king.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.white-pawn {
+    background-image: url('./white-pieces/white_pawn.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.white-rook {
+    background-image: url('./white-pieces/white_rook.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.white-knight {
+    background-image: url('./white-pieces/white_knight.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.white-bishop {
+    background-image: url('./white-pieces/white_bishop.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.white-queen {
+    background-image: url('./white-pieces/white_queen.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.white-king {
+    background-image: url('./white-pieces/white_king.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.dark {
+    background-color: #5f4bb6;
+}
+
+.light {
+    background-color: #ad9baa;
+}
+
+#user-move-start {
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    position: absolute;
+    top: 70px;
+    left: 70%;
+}
+
+#user-move-start-piece {
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    position: absolute;
+    top: 70px;
+    left: 80.5%
+}
+
+#user-move-end {
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    position: absolute;
+    top: 100px;
+    left: 70%;
+}
+
+#user-move-confirm {
+    text-align: center;
+    width: 155px;
+    padding: 5px;
+    border-radius: 10px;
+    position: absolute;
+    top: 100px;
+    left: 80.5%;
+}
+
+#move-text {
+    background-image: linear-gradient(#808080, #ffffff, #808080);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: absolute;
+    top: 45px;
+    left: 76.25%
+}

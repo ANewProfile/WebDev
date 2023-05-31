@@ -1,0 +1,61 @@
+html {
+    background-color: teal;
+}
+
+img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+
+/* #sign-up{
+    color: yellow;
+    position: absolute;
+    left: 350px;
+} */
+
+#title{
+    border-radius: 15px;
+    background-color: gold;
+    color: red;
+    text-align: center;
+    margin: 5px;
+    padding: 15px;
+}
+
+#subtitle{
+    border-radius: 15px;
+    background-color: magenta;
+    color: white;
+    text-align: center;
+    margin: 5px;
+    padding: 20px;
+}
+
+#form-1{
+    color: white;
+    position: absolute;
+    top: 600px;
+    left: 400px;
+}
+
+#submit-button-1{
+    border-radius: 20px;
+}
+
+#next-page{
+    border-radius: 20px;
+    border-right: 1px lavender solid;
+    border-left: 1px teal solid;
+    border-top: 1px teal solid;
+    border-bottom: 1px lavender solid;
+    position: absolute;
+    top: 650px;
+    left: 650px;
+}
+
+.form-1{
+    border-radius: 5px;
+    border: 1px solid darkblue;
+}

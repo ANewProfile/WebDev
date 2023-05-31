@@ -1,0 +1,38 @@
+p{
+    color: white;
+    background: red;
+    /* to be continued... (btw this is a comment)*/
+    font-style: italic;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+
+/* specific ids are defined using a # symbol */
+#green_box{
+    width: 100px;
+    height: 100px;
+    background: green;
+    border: 2px solid black;
+    padding: 3px;
+}
+
+#red_box{ 
+    width: 100px;
+    height: 100px;
+    color: white;
+    background: red;
+    padding: 10px;
+}
+
+/* specific classes are defined using a . symbol */
+.blue_boxes{
+    width: 125px;
+    height: 125px;
+    color: white;
+    background: blue;
+    padding: 5px;
+    margin: 50px;
+    float: left;
+}
