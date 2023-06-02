@@ -56,8 +56,8 @@ const questions = [
     {
         question: "What does HTML stand for?",
         answers: [
-            { text: "Hypertext Markup Language", correct: true },
             { text: "Hypertext Markdown Language", correct: false },
+            { text: "Hypertext Markup Language", correct: true },
             { text: "Handoff Match Lines", correct: false },
             { text: "Ham Taps Maker Language", correct: false }
         ]
@@ -123,7 +123,7 @@ function selectAnswer(e){
 
 function showScore(){
     resetState();
-    questionElement.innerHTML = `You scored ${score}/${questions.length} questions!`;
+    questionElement.innerHTML = `You scored ${score}/${questions.length}!`;
     nextButton.innerHTML = 'Play Again';
     nextButton.style.display = 'block';
 }
