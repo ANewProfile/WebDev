@@ -120,9 +120,18 @@ var some_items = [
                 ["CBA/J", ["Overall Potency: AAV-PHP.eC with GRE or transgenic animal"]],
                 ["NOD/ShiLtJ", ["Overall Potency: AAV-PHP.eC with GRE or transgenic animal"]],]],]],
               ]],
-    ["Peripheral Nervous System", [["Broad"],
-                                    ["Sensory"],
-                                    ["Enteric"]]],
+    ["Peripheral Nervous System", [["Broad", [["Mouse", [["Unspecified", ["Overall Potency: MaCPNS2", "Alternative Capsid: PHP.S"]],]],
+                                            ["Rat", [["Unspecified", ["Overall Potency: MaCPNS2", "Alternative Capsid: PHP.S"]],]],
+                                            ["Non-human primate (NHP)", [["Marmoset", ["Overall Potency: MaCPNS2", "Note: CNS is also broadly transduced in this species"]],
+                                                                        ["Macaque", ["Overall Potency: MaCPNS2", "Note: CNS is also broadly transduced in this species"]],]],]],
+                                    ["Sensory", [["Mouse", [["Unspecified", ["Overall Potency: MaCPNS1", "Capsid Specificity: MaCPNS1"]],]],
+                                                ["Rat", [["Unspecified", ["Overall Potency: MaCPNS1 with GRE", "Alternative Capsid: MaCPNS2 with GRE"]],]],
+                                                ["Non-human primate (NHP)", [["Marmoset", ["Overall Potency: MaCPNS1 with GRE", "Alternative Capsid: MaCPNS2 with GRE", "Note: CNS is also broadly transduced in this species"]],
+                                                                            ["Macaque", ["Overall Potency: MaCPNS1 with GRE", "Alternative Capsid: MaCPNS2 with GRE", "Note: CNS is also broadly transduced in this species"]],]],]],
+                                    ["Enteric", [["Mouse", [["Unspecified", ["Overall Potency: MaCPNS2 with GRE"]],]],
+                                                ["Rat", [["Unspecified", ["Overall Potency: MaCPNS2 with GRE", "Alternative Capsid: MaCPNS1 with GRE"]],]],
+                                                ["Non-human primate (NHP)", [["Marmoset", ["Overall Potency: MaCPNS2 with GRE", "Alternative Capsid: MaCPNS1 with GRE", "Note: CNS is also broadly transduced in this species"]],
+                                                                            ["Macaque", ["Overall Potency: MaCPNS2 with GRE", "Note: CNS is also broadly transduced in this species"]],]],]],]],
   ];
   
 $(document).ready(function() {
@@ -213,10 +222,11 @@ $(document).ready(function() {
     }
   
     $("#clear").on("click", function() {
-      $("#list2").empty();
-      $("#list3").empty();
-      $("#list4").empty();
-      $("#list5").empty();
+        $(".item-button1").css("background-color", "white");
+        $("#list2").empty();
+        $("#list3").empty();
+        $("#list4").empty();
+        $("#list5").empty();
     });
 
     set_list1();
