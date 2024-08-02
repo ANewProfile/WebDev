@@ -136,82 +136,109 @@ var some_items = [
   
 $(document).ready(function() {
   
+    // function set_list1() {
+    //     _.map(some_items, function(item) {
+
+    //         var list_item = document.createElement("li");
+    //         var button = document.createElement("button");
+
+    //         $(button).addClass("item-button1").html(item[0]).on("click", function() {
+    //             $(".item-button1").css("background-color", "white");
+    //             $(this).css("background-color", "#00ff00");
+    //             $("#list2").empty();
+    //             $("#list3").empty();
+    //             $("#list4").empty();
+    //             $("#list5").empty();
+    //             console.log("setting list2 with", item[1])
+    //             set_list2(item[1]);
+    //         });
+
+    //         $(list_item).html($(button))
+    //         $("#list1").append(list_item);
+    //     });
+    // }
+
     function set_list1() {
         _.map(some_items, function(item) {
 
-            var list_item = document.createElement("li");
-            var button = document.createElement("button");
+            // var list_item = document.createElement("li");
+            var option = document.createElement("option");
 
-            $(button).addClass("item-button1").html(item[0]).on("click", function() {
-                $(".item-button1").css("background-color", "white");
-                $(this).css("background-color", "#00ff00");
-                $("#list2").empty();
-                $("#list3").empty();
-                $("#list4").empty();
-                $("#list5").empty();
-                console.log("setting list2 with", item[1])
-                set_list2(item[1]);
+            $(option).addClass("item-button1").html(item[0])
+            $("#list1").on("submit", function () {
+                console.log("selected");
             });
+            // .on("click", function() {
+            //     $(".item-button1").css("background-color", "white");
+            //     $(this).css("background-color", "#00ff00");
+            //     $("#list2").empty();
+            //     $("#list3").empty();
+            //     $("#list4").empty();
+            //     $("#list5").empty();
+            //     console.log("setting list2 with", item[1])
+            //     set_list2(item[1]);
+            // });
 
-            $(list_item).html($(button))
-            $("#list1").append(list_item);
+
+            // $(list_item).html($(button))
+            $("#list1").append(option);
         });
     }
   
     function set_list2(items) {
         _.map(items, function(item) {
   
-            var list_item = document.createElement("li");
-            var button = document.createElement("button");
+            // var list_item = document.createElement("li");
+            var option = document.createElement("option");
     
-            $(button).addClass("item-button2").html(item[0]).on("click", function() {
-                $(".item-button2").css("background-color", "white");
-                $(this).css("background-color", "#00ff00");
+            $(option).addClass("item-button2").html(item[0]).on("click", function() {
+                // $(".item-button2").css("background-color", "white");
+                // $(this).css("background-color", "#00ff00");
                 $("#list3").empty();
                 $("#list4").empty();
                 $("#list5").empty();
                 set_list3(item[1]);
         });
   
-        $(list_item).html($(button))
-        $("#list2").append(list_item);
+        // $(list_item).html($(button))
+        $("#list2").append(option);
       });
     }
   
     function set_list3(items) {
         _.map(items, function(item) {
   
-            var list_item = document.createElement("li");
-            var button = document.createElement("button");
+            // var list_item = document.createElement("li");
+            var option = document.createElement("option");
     
-            $(button).addClass("item-button3").html(item[0]).on("click", function() {
-                $(".item-button3").css("background-color", "white");
-                $(this).css("background-color", "#00ff00");
+            $(option).addClass("item-button3").html(item[0]).on("click", function() {
+                // $(".item-button3").css("background-color", "white");
+                // $(this).css("background-color", "#00ff00");
                 $("#list4").empty();
                 $("#list5").empty();
                 set_list4(item[1]);
         });
   
-        $(list_item).html($(button))
-        $("#list3").append(list_item);
+        // $(list_item).html($(button))
+        $("#list3").append(option);
       });
     }
   
     function set_list4(items) {
         _.map(items, function(item) {
   
-            var list_item = document.createElement("li");
-            var button = document.createElement("button");
+            // var list_item = document.createElement("li");
+            var option = document.createElement("option");
     
-            $(button).addClass("item-button4").html(item[0]).on("click", function() {
-                $(".item-button4").css("background-color", "white");
-                $(this).css("background-color", "#00ff00");
+            $(option).addClass("item-button4").html(item[0]).on("click", function() {
+                // $(".item-button4").css("background-color", "white");
+                // $(this).css("background-color", "#00ff00");
                 $("#list5").empty();
                 set_list5(item[1]);
         });
   
-        $(list_item).html($(button))
-        $("#list4").append(list_item);
+        // $(list_item).html($(button))
+        $("#list4").append(option);
       });
     }
   
