@@ -135,7 +135,7 @@ var some_items = [
   ];
   
 $(document).ready(function() {
-    
+
     function set_options_list(which_list, items) {
         $("#list"+which_list).empty();
         $("#list"+which_list).append("<option value='-' disabled selected>Choose an option</option>")
@@ -169,11 +169,11 @@ $(document).ready(function() {
         if (items.length === 0) {
             return;
         }
-        if (Array.isArray(items[0])) {
-            set_options_list(which_list, items);
+        if (typeof items[0] === "string") {
+            set_li_list(which_list, items);
         }
         else {
-            set_li_list(which_list, items);
+            set_options_list(which_list, items);
         }
     }
   
