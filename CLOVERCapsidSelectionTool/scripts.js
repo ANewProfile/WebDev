@@ -136,6 +136,11 @@ var capsids = [
   
 $(document).ready(function() {
 
+    function clear_list(which_list) {
+        $("#list"+which_list).empty();
+        $("#list"+which_list).append("<option value='-' disabled selected>Choose an option</option>");
+    }
+
     function set_options_list(which_list, items) {
         $("#list"+which_list).empty();
         $("#list"+which_list).append("<option value='-' disabled selected>Choose an option</option>")
@@ -179,20 +184,15 @@ $(document).ready(function() {
   
     $("#clear").on("click", function() {
         $(".item-button1").css("background-color", "white");
-        $("#list2").empty();
-        $("#list2").append("<option value='-' disabled selected>Choose an option</option>")
-        $("#list3").empty();
-        $("#list3").append("<option value='-' disabled selected>Choose an option</option>")
-        $("#list4").empty();
-        $("#list4").append("<option value='-' disabled selected>Choose an option</option>")
+        clear_list(1);
+        clear_list(2);
+        clear_list(3);
+        clear_list(4);
         $("#list5").empty();
-
-        $("#list1").empty();
-        $("#list1").append("<option value='-' disabled selected>Choose an option</option>")
-        set_list_generic(1, some_items)
+        set_list_generic(1, capsids)
 
     });
 
-    set_list_generic(1, some_items);
+    set_list_generic(1, capsids);
   
   });
