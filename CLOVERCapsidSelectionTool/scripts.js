@@ -12,24 +12,25 @@ $(document).ready(function() {
         }
         else {
             $("#list"+which_list).empty();
+            // console.log("emptied list "+which_list)
         }
     }
 
     function clear_lists(start_list) {
-        console.log("start_list: "+start_list);
+        // console.log("start_list: "+start_list);
         var next_list = start_list+1;
-        console.log("next_list: "+next_list);
-        console.log($("#list"+next_list));
-        // if ($("#list"+next_list) !== undefined) {
-        //     console.log("clearing #list"+start_list);
-        //     clear_list(start_list, true);
-        //     console.log("cleared list "+start_list+" and added option");
-        //     console.log("next list: "+next_list);
-        //     clear_lists(next_list);
-        // } else {
-        //     clear_list("#list"+start_list, false);
-        //     console.log("cleared list "+start_list+" and didn't add option");
-        // }
+        // console.log("next_list: "+next_list);
+        // console.log($("#list"+6));
+        if ($("#list"+next_list).length > 0) {
+            // console.log("clearing #list"+start_list);
+            clear_list(start_list, true);
+            // console.log("cleared list "+start_list+" and added option");
+            // console.log("next list: "+next_list);
+            clear_lists(next_list);
+        } else {
+            clear_list(start_list, false);
+            // console.log("cleared list "+start_list+" and didn't add option");
+        }
     }
 
     function set_options_list(which_list, items) {
@@ -66,10 +67,12 @@ $(document).ready(function() {
         }
         clear_lists(which_list);
         if (Array.isArray(items[0])) {
-            set_li_list(which_list, items);
+            // console.log("setting list "+which_list);
+            set_options_list(which_list, items);
         }
         else {
-            set_options_list(which_list, items);
+            // console.log("setting final list");
+            set_li_list(which_list, items);
         }
     }
   
@@ -82,5 +85,6 @@ $(document).ready(function() {
     });
 
     set_list_generic(1, capsid_selections);
+    // console.log($("#list1"));
   
   });
