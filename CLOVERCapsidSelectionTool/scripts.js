@@ -66,10 +66,10 @@ $(document).ready(function() {
         clear_list(3);
         clear_list(4);
         $("#list5").empty();
-        set_list_generic(1, capsids)
+        set_list_generic(1, capsid_selections)
 
     });
 
-    set_list_generic(1, capsids);
+    set_list_generic(1, capsid_selections);
   
   });

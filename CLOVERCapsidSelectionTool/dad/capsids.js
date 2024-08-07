@@ -875,7 +875,7 @@ var capsid_selections = [
             "AAV9-X1.1",
            ]],
           ["If animal has AAV9", [
-            "eutralizing Abs - AAV1-X1",
+            "Neutralizing Abs - AAV1-X1",
            ]],
           ["Overall Potency", [
             "AAV9-X1.1",
@@ -886,7 +886,7 @@ var capsid_selections = [
             "AAV9-X1.1",
            ]],
           ["If animal has AAV9", [
-            "eutralizing Abs - AAV1-X1",
+            "Neutralizing Abs - AAV1-X1",
            ]],
           ["Overall Potency", [
             "AAV9-X1.1",
@@ -897,7 +897,7 @@ var capsid_selections = [
             "AAV9-X1.1",
            ]],
           ["If animal has AAV9", [
-            "eutralizing Abs - AAV1-X1",
+            "Neutralizing Abs - AAV1-X1",
            ]],
           ["Overall Potency", [
             "AAV9-X1.1",
@@ -908,7 +908,7 @@ var capsid_selections = [
             "AAV9-X1.1",
            ]],
           ["If animal has AAV9", [
-            "eutralizing Abs - AAV1-X1",
+            "Neutralizing Abs - AAV1-X1",
            ]],
           ["Overall Potency", [
             "AAV9-X1.1",
@@ -919,7 +919,7 @@ var capsid_selections = [
             "AAV9-X1.1",
            ]],
           ["If animal has AAV9", [
-            "eutralizing Abs - AAV1-X1",
+            "Neutralizing Abs - AAV1-X1",
            ]],
           ["Overall Potency", [
             "AAV9-X1.1",
@@ -930,7 +930,7 @@ var capsid_selections = [
             "AAV9-X1.1",
            ]],
           ["If animal has AAV9", [
-            "eutralizing Abs - AAV1-X1",
+            "Neutralizing Abs - AAV1-X1",
            ]],
           ["Overall Potency", [
             "AAV9-X1.1",
@@ -941,7 +941,7 @@ var capsid_selections = [
             "AAV9-X1.1",
            ]],
           ["If animal has AAV9", [
-            "eutralizing Abs - AAV1-X1",
+            "Neutralizing Abs - AAV1-X1",
            ]],
           ["Overall Potency", [
             "AAV9-X1.1",
@@ -952,7 +952,7 @@ var capsid_selections = [
             "AAV9-X1.1",
            ]],
           ["If animal has AAV9", [
-            "eutralizing Abs - AAV1-X1",
+            "Neutralizing Abs - AAV1-X1",
            ]],
           ["Overall Potency", [
             "AAV9-X1.1",
@@ -963,7 +963,7 @@ var capsid_selections = [
             "AAV9-X1.1",
            ]],
           ["If animal has AAV9", [
-            "eutralizing Abs - AAV1-X1",
+            "Neutralizing Abs - AAV1-X1",
            ]],
           ["Overall Potency", [
             "AAV9-X1.1",
@@ -974,7 +974,7 @@ var capsid_selections = [
             "AAV9-X1.1",
            ]],
           ["If animal has AAV9", [
-            "eutralizing Abs - AAV1-X1",
+            "Neutralizing Abs - AAV1-X1",
            ]],
           ["Overall Potency", [
             "AAV9-X1.1",
@@ -1027,6 +1027,11 @@ var capsid_selections = [
           ]],
          ]],
       ["Non-human primate", [
+        ["Macaque", [
+          ["Overall Potency", [
+            "MaCPNS2 with GRE (Note: CNS is also broadly transduced in this species)",
+           ]],
+          ]],
         ["Marmoset", [
           ["Alternative capsid", [
             "MaCPNS1 with GRE (Note: CNS is also broadly transduced in this species)",
@@ -1083,17 +1088,6 @@ var capsid_selections = [
            ]],
           ["Overall Potency", [
             "MaCPNS1 with GRE",
-           ]],
-          ]],
-         ]],
-        ]],
-       ]],
-  ["Peripheral Nervous System	Enteric", [
-    ["nan", [
-      ["Non-human primate", [
-        ["Macaque", [
-          ["Overall Potency", [
-            "MaCPNS2 with GRE (Note: CNS is also broadly transduced in this species)",
            ]],
           ]],
          ]],

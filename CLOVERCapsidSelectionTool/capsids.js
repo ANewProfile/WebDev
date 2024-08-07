@@ -1,4 +1,4 @@
-var capsids = [
+var capsid_selections = [
     ["Brain", [["Broad", [["Mouse", [["C57BL/6J", ["Overall Potency: AAV-PHP.eB", "Expanded cell type coverage: AAV-PHP.AX"]],
                                     ["DBA/1J", ["Overall Potency: AAV-PHP.eB", "Expanded cell type coverage: AAV-PHP.AX"]],
                                     ["DBA/2J", ["Overall Potency: AAV-PHP.eB", "Expanded cell type coverage: AAV-PHP.AX"]],
