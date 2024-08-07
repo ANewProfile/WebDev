@@ -10,9 +10,9 @@ $(document).ready(function() {
         var next_list_container = $(".list-container:first", list_container)[0];
 
         $(list).empty();
-        $(list).append("<option value='-' selected disabled>Choose an option</option>");
 
         if (next_list_container !== undefined) {
+          $(list).append("<option value='-' selected disabled>Choose an option</option>");
           clear_list_in_container(next_list_container);
         }
     }

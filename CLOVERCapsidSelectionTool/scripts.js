@@ -5,8 +5,8 @@
   
 $(document).ready(function() {
 
-    function clear_list(which_list) {
-        if (which_list !== 5) {
+    function clear_list(which_list, add_option) {
+        if (add_option === true) {
             $("#list"+which_list).empty();
             $("#list"+which_list).append("<option value='-' disabled selected>Choose an option</option>");
         }
@@ -15,12 +15,25 @@ $(document).ready(function() {
         }
     }
 
+    function clear_lists(start_list) {
+        console.log("start_list: "+start_list);
+        var next_list = start_list+1;
+        console.log("next_list: "+next_list);
+        console.log($("#list"+next_list));
+        // if ($("#list"+next_list) !== undefined) {
+        //     console.log("clearing #list"+start_list);
+        //     clear_list(start_list, true);
+        //     console.log("cleared list "+start_list+" and added option");
+        //     console.log("next list: "+next_list);
+        //     clear_lists(next_list);
+        // } else {
+        //     clear_list("#list"+start_list, false);
+        //     console.log("cleared list "+start_list+" and didn't add option");
+        // }
+    }
+
     function set_options_list(which_list, items) {
-        clear_list(which_list);
-        clear_list(which_list+1);
-        clear_list(which_list+2);
-        clear_list(which_list+3);
-        clear_list(which_list+4);
+        // clear_lists(which_list);
         _.map(items, function(item) {
   
             // var list_item = document.createElement("li");
@@ -39,7 +52,7 @@ $(document).ready(function() {
     }
 
     function set_li_list(which_list, items) {
-        $("#list"+which_list).empty();
+        // $("#list"+which_list).empty();
         _.map(items, function (item) {
             element = document.createElement("li");
             $(element).html(item);
@@ -51,7 +64,8 @@ $(document).ready(function() {
         if (items.length === 0) {
             return;
         }
-        if (typeof items[0] === "string") {
+        clear_lists(which_list);
+        if (Array.isArray(items[0])) {
             set_li_list(which_list, items);
         }
         else {
@@ -61,12 +75,9 @@ $(document).ready(function() {
   
     $("#clear").on("click", function() {
         $(".item-button1").css("background-color", "white");
-        clear_list(1);
-        clear_list(2);
-        clear_list(3);
-        clear_list(4);
-        $("#list5").empty();
-        set_list_generic(1, capsid_selections)
+        var first_list = 1;
+        clear_lists(first_list);
+        set_list_generic(first_list, capsid_selections)
 
     });
 
