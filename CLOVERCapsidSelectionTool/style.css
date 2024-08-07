@@ -12,14 +12,10 @@
     transition: 800ms ease;
 } */
 
-#list5 {
-    font-size: 30px;
-}
-
 .list {
-    margin: 20px;
+    margin: 5px;
     list-style-type: none;
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 5px;
     border-width: 2px;
     width: fit-content;
@@ -43,4 +39,15 @@
 span {
     /* font-size: 50px; */
     padding-left: 20px;
+}
+
+label {
+    font-weight: 400;
+    font-size: 22px;
+    font-family: 'Calistoga';
+}
+
+p {
+    font-size: 14px;
+    font-family: Roboto, "Helvetica Neue", HelveticaNeue, "Liberation Sans", Arimo, Helvetica, Arial, sans-serif, dejavu_sans, Symbola;
 }
